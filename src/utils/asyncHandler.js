@@ -10,3 +10,5 @@ const asyncHandler = (func) => async (err , req, res, next)=>{
         })
     }
 }
+
+export default asyncHandler;

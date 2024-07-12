@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { DB_NAME , DB_URL } from "./../constants.js"
+import asynchandler from "./../utils/asyncHandler.js";
 
 const connect = async ()=>{
     try{
