@@ -6,8 +6,6 @@ dotenv.config({
     path : "./env"
 });
 
-connect();
-
-app.listen(8000, ()=>{
-    console.log(`App is Listening on https://localhost:8000`)
+connect().then(()=>{
+    app.listen(process.env.PORT || 8000 , ()=>console.log(`Listening`))
 })

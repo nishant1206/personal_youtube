@@ -11,12 +11,12 @@ app.use(cors({
 }));
 app.use(express.json({limit : "16kb"}));
 app.use(express.urlencoded({extended : true , limit : "16kb"}));
-app.use(cookieParser);
+app.use(cookieParser());
 
 // user router
 import router from "./routes/user.routes.js";
 
 // routes
-app.use("/api/v1/user" , router);
+app.use("/api/v1/users" , router);
 
 export {app};
