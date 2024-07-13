@@ -7,7 +7,7 @@ const Schema = new mongoose.Schema({
         type : Number,
         required : true,
         unique : true
-    },
+    }, 
     name : {
         type : String ,
         required : true ,
